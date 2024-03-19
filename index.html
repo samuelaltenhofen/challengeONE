@@ -7,26 +7,41 @@
     <title>Challenge ONE</title>
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <img src="/assets/logo_alura.png" alt="logo da alura">
     </header>
 
-    <main>
-        <section>
-            <h1>Digite seu texto</h1>
-            <img src="/assets/imagem_atencao.png" alt="logo de atencao">
-            <p>Apenas letras minúsculas e sem acento.</p>
-            <a></a>
-            <a></a>
-        </section>
+    <main class="formulario">
+        <section class="formulario__primario">
+            <section>
+                    <label class="formulario__primario__texto" for="story">Digite seu texto:</label>
 
-        <section>
-            <img src="/assets/retangulo.png" alt="imagem do retangulo">
-            <img src="/assets/imagem_descritiva.jpg" alt="imagem de busca">
-        </section>
+                    <textarea class="formulario__primario__texto" id="story" name="story" rows="5" cols="30"></textarea>
+                </section>
+
+                <section class="secao__atencao">
+                <img src="/assets/imagem_atencao.png" alt="logo de atencao">
+                <p>Apenas letras minúsculas e sem acento.</p>
+                </section>
+
+                    <div class="secao__botoes">
+                        <a class="botao__criptografar">Criptografar</a>
+                        <a class="botao__descriptografar">Descriptografar</a>
+                    </div>
+            </section>
+
+
+            <section class="formulario__secundario">
+                <p class="texto" id="texto"></p>
+                <img id="imagem_busca" class="imagem__atencao" src="/assets/imagem_descritiva.jpg" alt="imagem de busca">
+                <h1 id="titulo_sem-texto" class="titulo__notext">Nenhuma mensagem encontrada</h1>
+                <p id="paragrafo_sem-texto" class="paragrafo_notext">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <!-- <img class="image" src="/assets/retangulo.png" alt="imagem do retangulo"> -->
+            </section>
+
 
     </main>
     <footer></footer>
-    
+
 </body>
 </html>
